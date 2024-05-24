@@ -68,7 +68,7 @@ function changeContext(contexto) {
         contexto.classList.remove('active');
     })
     html.setAttribute('data-contexto', contexto);
-    banner.setAttribute('src', `/imagens/${contexto}.png`);
+    banner.setAttribute('src', `./imagens/${contexto}.png`);
     switch (contexto) {
         case 'foco':
             title.innerHTML = `Otimize sua produtividade,<br>
@@ -110,7 +110,7 @@ function iniciarOuPausar() {
     }
     iniciar.play()
     intervaloId = setInterval(contagemRegressiva, 1000)
-    icon.setAttribute('src', '/imagens/pause.png');
+    icon.setAttribute('src', './imagens/pause.png');
     iniciarOuPausarBt.textContent = "Pausar";
 }
 
@@ -118,7 +118,7 @@ function iniciarOuPausar() {
 function zerar() {
     clearInterval(intervaloId);
     intervaloId = null;
-    icon.setAttribute('src', '/imagens/play_arrow.png');
+    icon.setAttribute('src', './imagens/play_arrow.png');
     iniciarOuPausarBt.textContent = "Começar";
 }
 
