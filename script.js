@@ -15,10 +15,10 @@ const startPauseBt = document.querySelector('#start-pause');
 const iniciarOuPausarBt = document.querySelector('#start-pause span');
 
 /* Audios */
-const music = new Audio('/sons/luna-rise-part-one.mp3');
-const iniciar = new Audio('/sons/play.wav');
-const parar = new Audio('/sons/pause.mp3');
-const final = new Audio('/sons/beep.mp3');
+const music = new Audio('./sons/luna-rise-part-one.mp3');
+const iniciar = new Audio('./sons/play.wav');
+const parar = new Audio('./sons/pause.mp3');
+const final = new Audio('./sons/beep.mp3');
 
 /* Icons */
 const icon = document.querySelector('.app__card-primary-butto-icon');
